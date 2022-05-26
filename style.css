@@ -12,8 +12,16 @@
   --bege: #F5EDD0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .bg-bege {
   background-color: var(--bege);
+}
+
+.bg-pink{ 
+  background-color: var(--pink)
 }
 
 .bg-branco{
@@ -37,6 +45,19 @@
   color: var(--branco);
 }
 
+.btn-blue {
+  font-weight: 600;
+  border: 2px solid var(--azul);
+  background-color: transparent;
+  color: var(--azul);
+  border-radius: 8px;
+}
+
+.btn-blue:hover {
+  background-color: var(--azul);
+  color: #151313 ;
+}
+
 .text-blue {
   color: var(--azul)
 }
@@ -45,12 +66,16 @@
   color: var(--laranja)
 }
 
+.text-pink {
+  color: var(--pink)
+}
+
 .font-mono {
   font-family: 'Roboto Mono', monospace;
   letter-spacing: 2px;
 }
 
-.nav-link:hover {
+.nav-link-menu:hover {
   border-bottom: 1px solid var(--azul);
   font-weight: 700;
 }
@@ -64,5 +89,10 @@
   background-color: var(--bege);
   cursor: pointer;
   
+}
+
+.fw-900 {
+  font-weight: 900;
+  letter-spacing: 5px;
 }
 

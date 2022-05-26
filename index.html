@@ -43,21 +43,23 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto py-1">
               <li class="nav-item active">
-                <a class="nav-link text-dark" href="#"
+                <a class="nav-link nav-link-menu text-dark" href="#"
                   >Inicio <span class="sr-only">(current)</span></a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#">Frontend</a>
+                <a class="nav-link nav-link-menu text-dark" href="#frontend"
+                  >Frontend</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#">Backend</a>
+                <a class="nav-link nav-link-menu text-dark" href="#backend">Backend</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#">DevOps</a>
+                <a class="nav-link nav-link-menu text-dark" href="#devops">DevOps</a>
               </li>
               <li class="nav-item">
-                <a class="btn btn-pink" href="#">Comprar</a>
+                <a class="btn btn-pink" href="" data-toggle="modal" data-target="#orangeModalSubscription">Comprar</a>
               </li>
             </ul>
           </div>
@@ -144,7 +146,9 @@
           class="row d-flex flex-column align-items-center justify-content-center"
         >
           <h2>Conheça um pouco mais</h2>
-          <div class="col-md-8 embed-responsive embed-responsive-16by9 border border-blue">
+          <div
+            class="col-md-8 embed-responsive embed-responsive-16by9 border border-blue"
+          >
             <iframe
               class="rounded"
               src="https://www.youtube.com/embed/RW1Rp2oQ_bc"
@@ -224,12 +228,345 @@
             </div>
           </div>
         </div>
-        <hr>
+        <hr />
       </div>
       <!-- !video + cards cursos -->
 
-      <div class="container"></div>
+      <div class="container vh-100 d-flex align-items-center" id="frontend">
+        <div>
+          <h2 class="text-blue h1 fw-900 text-center">Frontend Developer</h2>
+          <div class="row">
+            <blockquote class="blockquote ml-auto">
+              <p class="mb-0 text-pink">
+                Front é legal, é só jogar guache na tela.
+              </p>
+              <footer class="blockquote-footer text-right">
+                Sabias palavras de:
+                <cite title="Source Title" class="text-orange"
+                  >Luis Guerreiro</cite
+                >
+              </footer>
+            </blockquote>
+          </div>
+
+          <div class="row">
+            <div class="col-3">
+              <div
+                class="nav flex-column nav-pills"
+                id="v-pills-tab"
+                role="tablist"
+                aria-orientation="vertical"
+              >
+                <a
+                  class="nav-link active"
+                  id="v-pills-html-tab"
+                  data-toggle="pill"
+                  href="#v-pills-html"
+                  role="tab"
+                  aria-controls="v-pills-html"
+                  aria-selected="true"
+                  >HTML</a
+                >
+                <a
+                  class="nav-link"
+                  id="v-pills-css-tab"
+                  data-toggle="pill"
+                  href="#v-pills-css"
+                  role="tab"
+                  aria-controls="v-pills-css"
+                  aria-selected="false"
+                  >CSS</a
+                >
+                <a
+                  class="nav-link"
+                  id="v-pills-js-tab"
+                  data-toggle="pill"
+                  href="#v-pills-js"
+                  role="tab"
+                  aria-controls="v-pills-js"
+                  aria-selected="false"
+                  >JavaScript</a
+                >
+                <a
+                  class="nav-link"
+                  id="v-pills-bootstrap-tab"
+                  data-toggle="pill"
+                  href="#v-pills-bootstrap"
+                  role="tab"
+                  aria-controls="v-pills-bootstrap"
+                  aria-selected="false"
+                  >Bootstrap</a
+                >
+              </div>
+            </div>
+            <div class="col-9">
+              <div class="tab-content" id="v-pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="v-pills-html"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-html-tab"
+                >
+                  <p>
+                    Aqui, aprendemos a criar a nossa estrutura base para as
+                    páginas de internet, possivelmente usando muito Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Dignissimos,
+                    voluptate sunt? Eius laboriosam fuga eveniet magnam
+                    consequatur odio unde excepturi.
+                  </p>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-css"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-css-tab"
+                >
+                  <p>
+                    Aqui o front já começa a não parecer um cara tão legal
+                    assim, pra que tanta classe com tanto atributo assim meu
+                    mano?? Não tem como fazer isso mais facil não?
+                  </p>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-js"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-js-tab"
+                >
+                  <p>
+                    Aqui lascou-se tudo de vez..vou completar isso com lorem pq
+                    é o que tem pra hoje... "Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Impedit, accusamus. Nihil
+                    voluptas molestias impedit deleniti cumque perspiciatis
+                    officia iusto natus."
+                  </p>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-bootstrap"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-bootstrap-tab"
+                >
+                  <p>
+                    Agora sim, esse cara já vai trazer o CSS pronto pra mim,
+                    agora ficou maravilho... perai, como assim eu coloquei as
+                    classes e não ficou do jeito certo??? Vou virar tiktoker
+                    mesmo, mais pratico.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+        </div>
+      </div>
+
+      <div class="container vh-100 d-flex align-items-center" id="backend">
+        <div>
+          <h2 class="text-blue h1 fw-900 text-center">Backend Developer</h2>
+          <div class="row">
+            <blockquote class="blockquote ml-auto">
+              <p class="mb-0 text-pink">
+                Public static void main(String[] args){ <br />
+                System.out.println("\n Hello World"); <br />
+                }
+              </p>
+              <footer class="blockquote-footer text-right">
+                Kit boas vindas de Java, por:
+                <cite title="Source Title" class="text-orange"
+                  >Todo DEV do mundo</cite
+                >
+              </footer>
+            </blockquote>
+          </div>
+
+          <div class="row">
+            <div class="col-3">
+              <div
+                class="nav flex-column nav-pills"
+                id="v-pills-tab"
+                role="tablist"
+                aria-orientation="vertical"
+              >
+                <a
+                  class="nav-link active"
+                  id="v-pills-home-tab"
+                  data-toggle="pill"
+                  href="#v-pills-home"
+                  role="tab"
+                  aria-controls="v-pills-home"
+                  aria-selected="true"
+                  >Java</a
+                >
+                <a
+                  class="nav-link"
+                  id="v-pills-profile-tab"
+                  data-toggle="pill"
+                  href="#v-pills-profile"
+                  role="tab"
+                  aria-controls="v-pills-profile"
+                  aria-selected="false"
+                  >Spring</a
+                >
+                <a
+                  class="nav-link"
+                  id="v-pills-messages-tab"
+                  data-toggle="pill"
+                  href="#v-pills-messages"
+                  role="tab"
+                  aria-controls="v-pills-messages"
+                  aria-selected="false"
+                  >MySQL</a
+                >
+                <a
+                  class="nav-link"
+                  id="v-pills-settings-tab"
+                  data-toggle="pill"
+                  href="#v-pills-settings"
+                  role="tab"
+                  aria-controls="v-pills-settings"
+                  aria-selected="false"
+                  >PostgreSQL</a
+                >
+              </div>
+            </div>
+            <div class="col-9">
+              <div class="tab-content" id="v-pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="v-pills-home"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-home-tab"
+                >
+                  <p>
+                    Vai ser tudo com lorem pq to com preguiça de escrever: Lorem
+                    ipsum, dolor sit amet consectetur adipisicing elit. Non
+                    dolorum officiis autem. Voluptates necessitatibus natus,
+                    nemo dignissimos tenetur consectetur sit aliquam omnis id
+                    provident autem possimus magnam vel non sequi..
+                  </p>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-profile"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-profile-tab"
+                >
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Magnam laborum accusamus officiis unde eligendi sequi totam
+                    ipsam aut saepe. Repellendus excepturi adipisci voluptate
+                    veniam, voluptas ipsa inventore eveniet assumenda dolore id
+                    cum accusantium! Fugiat voluptas impedit dolorem dignissimos
+                    nobis quia vero, beatae inventore exercitationem itaque
+                    animi! Ut quod error ipsam?
+                  </p>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-messages"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-messages-tab"
+                >
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Labore nam est sit cum error atque officiis ex corrupti
+                    exercitationem. Voluptatibus labore quibusdam ad repellendus
+                    praesentium quos consectetur laborum assumenda. Corporis
+                    similique dignissimos animi quia id eveniet voluptatum alias
+                    cupiditate veniam corrupti, sint nostrum. Perferendis dicta
+                    et nemo reiciendis.
+                  </p>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-settings"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-settings-tab"
+                >
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Modi, blanditiis corrupti? Distinctio commodi laborum, enim
+                    ex dicta quidem tempore vitae perferendis velit, alias vero
+                    voluptatibus expedita architecto ipsam vel repudiandae ea
+                    dolores tenetur? Odit eius eum maiores eos debitis impedit
+                    neque. Amet accusantium nihil pariatur.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+        </div>
+      </div>
+
+      <div class="container vh-100 d-flex align-items-center" id="devops">
+        <div class="w-100">
+          <h2 class="text-blue h1 fw-900 text-center">DevOps</h2>
+          <div class="row">
+            <blockquote class="blockquote ml-auto">
+              <p class="mb-0 text-pink">
+                Ainda não chegamos nessa parte
+              </p>
+              <footer class="blockquote-footer text-right">
+                Aqui o bagulho fica tenso, por:
+                <cite title="Source Title" class="text-orange"
+                  >Thiago Faccipieri</cite
+                >
+              </footer>
+            </blockquote>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-4">
+              <img src="./img/image404.svg" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="container-fluid p-0 m-0 bg-dark">
+      <p class="text-pink p-0 font-weight-bold h4 text-center m-0 py-3">Desafio concluido as 20:30 aproximadamente - Tamo juntão Recife....</p>
+    </div>
+
+
+
+    <div class="modal fade" id="orangeModalSubscription" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-notify modal-warning" role="document">
+    <!--Content-->
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header bg-pink">
+        <h5 class="modal-title text-white" id="exampleModalLabel">Comprar nosso curso</h5>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Nome Completo" id="nomecad" onkeyup="validarNome()">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Endereço" id="endereco">
+          </div>
+          <div class="d-flex ">
+            <div class="w-75 mr-2">
+              <input type="text" class="form-control" placeholder="Cartão de crédito"  id="card">
+            </div>
+            <div class="w-25">
+              <input type="text" class="form-control" placeholder="CVC" id="cvc">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-blue">Comprar</button>
+      </div>
+    <!--/.Content-->
+  </div>
+</div>
+
+
+
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -241,5 +578,7 @@
       integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
       crossorigin="anonymous"
     ></script>
+
+    <script src="script.js"></script>
   </body>
 </html>
